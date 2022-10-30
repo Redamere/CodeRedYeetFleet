@@ -1,0 +1,20 @@
+{
+  "name": "Code Red Extension Project",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Code red project",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Code Red Project",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "img32.jpg"
+    }
+  },
+      "content_scripts": [{
+        "matches": ["https://*/*"], 
+        "js": ["popup.js"]
+    } ]
+}
